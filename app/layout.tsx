@@ -32,7 +32,9 @@ export default function RootLayout({
                             <Link href={"/"}>Sobre mi</Link>
                             <Link href={"/blog"}>Blog</Link>
                             <Link href={"/proyectos"}>Proyectos</Link>
+                            {/*
                             <Link href={""}>Música</Link>
+                            */}
                         </div>
                     </div>
                     {children}

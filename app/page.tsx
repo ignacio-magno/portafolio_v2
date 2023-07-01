@@ -52,7 +52,7 @@ export default function Home() {
 }
 
 
-export function CarbonLogoGithub(props: SVGProps<SVGSVGElement>) {
+function CarbonLogoGithub(props: SVGProps<SVGSVGElement>) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32" {...props}>
             <path fill="currentColor" fillRule="evenodd"
@@ -62,7 +62,7 @@ export function CarbonLogoGithub(props: SVGProps<SVGSVGElement>) {
 }
 
 
-export function CarbonLogoInstagram(props: SVGProps<SVGSVGElement>) {
+function CarbonLogoInstagram(props: SVGProps<SVGSVGElement>) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32" {...props}>
             <circle cx="22.406" cy="9.594" r="1.44" fill="currentColor"></circle>
@@ -75,7 +75,7 @@ export function CarbonLogoInstagram(props: SVGProps<SVGSVGElement>) {
 }
 
 
-export function CarbonLogoLinkedin(props: SVGProps<SVGSVGElement>) {
+function CarbonLogoLinkedin(props: SVGProps<SVGSVGElement>) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32" {...props}>
             <path fill="currentColor"
@@ -85,7 +85,7 @@ export function CarbonLogoLinkedin(props: SVGProps<SVGSVGElement>) {
 }
 
 
-export function CarbonLogoYoutube(props: SVGProps<SVGSVGElement>) {
+function CarbonLogoYoutube(props: SVGProps<SVGSVGElement>) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32" {...props}>
             <path fill="currentColor"
@@ -94,7 +94,7 @@ export function CarbonLogoYoutube(props: SVGProps<SVGSVGElement>) {
     )
 }
 
-export function CarbonEmail(props: SVGProps<SVGSVGElement>) {
+function CarbonEmail(props: SVGProps<SVGSVGElement>) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32" {...props}>
             <path fill="currentColor"
