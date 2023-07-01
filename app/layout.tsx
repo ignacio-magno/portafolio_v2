@@ -25,7 +25,7 @@ export default function RootLayout({
         <div
             className={"font-roboto-mono font-light max-w-[90rem] mx-auto px-9 md:px-9 w-full lg:px-20 flex flex-col h-screen text-white text-base"}>
             <div className={"flex-1 w-[50rem] m-auto "}>
-                <div className={"relative mt-16"}>
+                <div className={"relative mt-16 mb-16"}>
                     <div className={"w-full flex justify-between items-center pb-16"}>
                         <div></div>
                         <div className={"flex gap-x-5 "}>

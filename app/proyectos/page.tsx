@@ -1,18 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import {getProyectos, IProyectos} from "@/components/proyectosGenerator/IProyector";
 
-interface IProyectos {
-    href: string
-    tags: string[]
-}
 
-export default function Page() {
-    const def = [
-        {
-            href: "https://lupapolitica.cl",
-            tags: ["web scraping", "nextjs", "react", "tailwindcss", "seo", "open source"]
-        }
-    ]
+export default async function Page() {
+
+    const def = await getProyectos()
 
     return <>
         <h1 className={"text-xl font-medium"}>Proyectos Open Source y Apis.</h1>
@@ -36,28 +29,27 @@ export default function Page() {
             <br/>
         </div>
 
-        {
-            def.map(j => <Item {...j} key={j.href}/>)
-        }
+        <div className={"flex flex-col gap-y-5"}>
+            {
+                def.map(j => <Item {...j.Card} key={j.Card.href}/>)
+            }
+        </div>
     </>
 }
 
-function Item({href, tags}: IProyectos) {
+function Item({href, tags, title, pathImage, body, type}: IProyectos["Card"]) {
     return <Link href={href} rel={"nofollow"}>
         <div className={"bg-white px-14 py-7 text-black"}>
-            <div className={"flex gap-x-2 items-center"}>
-                <Image src={"/lupapolitica-black.png"} alt={"lupa politica logo"} width={50} height={50}/>
-                <h2 className={"text-xl font-medium"}>Lupa política</h2>
+            <div className={"flex justify-between items-center"}>
+                <div className={"flex gap-x-2 items-center"}>
+                    <Image src={pathImage} alt={"lupa politica logo"} width={50} height={50}/>
+                    <h2 className={"text-xl font-medium"}>{title}</h2>
+                </div>
+                <p className={"text-xs"}>{type}</p>
             </div>
             <br/>
             <div className={"flex flex-col gap-y-2"}>
-                <p>Lupa política es un proyecto que realiza web scraping de páginas del estado de Chile, recolecta
-                    los
-                    datos
-                    y los guarda en una base de datos pública.</p>
-                <p>Cuenta con un backend y un frontend open source, la página cuenta con seo y está abierta a nuevas
-                    integraciones
-                    que clientes pida o a mi se me ocurran.</p>
+                {body}
             </div>
             <br/>
             <div className={"flex gap-x-2 text-white"}>
