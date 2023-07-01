@@ -11,9 +11,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="es">
-        <div className="fixed inset-0 flex justify-center sm:px-3 dark:bg-zinc-900">
+        <div className="fixed inset-0 flex justify-center sm:px-3 bg-zinc-900">
             <div className="flex w-full md:max-w-[70rem]  lg:px-8">
-                <div className="w-full ring-1 ring-zinc-100 dark:bg-zinc-800 dark:ring-zinc-300/20"/>
+                <div className="w-full ring-1 ring-zinc-100 bg-zinc-800 ring-zinc-300/20"/>
             </div>
         </div>
 

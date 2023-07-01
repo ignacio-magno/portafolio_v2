@@ -75,7 +75,7 @@ function Page() {
                 <h2>Ejemplo de solicitud usando cURL:</h2>
                 <pre>
                 <code>
-              curl -X POST -F "planilla=@ruta/al/archivo.pdf" https://api.ignaciolp.cl/contabilidad/previred/reader-planilla
+              curl -X POST -F &quot;planilla=@ruta/al/archivo.pdf&quot; https://api.ignaciolp.cl/contabilidad/previred/reader-planilla
             </code>
           </pre>
 
