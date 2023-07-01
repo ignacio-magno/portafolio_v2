@@ -1,9 +1,19 @@
 import Link from "next/link";
 import {getBlogs, IBlogs} from "@/components/blogs/iBlogs";
 
+export const metadata = {
+    title: "Blog Ignacio LP.",
+    description: "Blog personal de Ignacio, donde encontrarás titulares, tutoriales, curiosidades y más. referido al mundo de la programación y otras cosas que se me ocurran.",
+}
+
 export default async function Page() {
     const elements = await getBlogs()
     return <main>
+        <h1 className={"text-xl font-medium "}>Mi blog personal.</h1>
+        <br/>
+        <p>Pensamientos, ideas, tutoriales, curiosidades, todo lo escribiré aquí y que crea que pueda ayudar un poco
+            a los demás, a veces escribiré solo por la gracia de poder documentar lo que se me ocurre en el momento.</p>
+        <br/>
         <div className={"flex flex-col gap-y-4"}>
             {elements.map((item, index) => <Item {...item.Card} key={index}/>)}
         </div>

@@ -3,14 +3,19 @@ import {IProyectos} from "@/components/proyectosGenerator/IProyector";
 export const deserializadorPlanillaPrevired: IProyectos = {
     Card: {
         href: "/proyectos/extractor-datos-pdf-cotizaciones",
-        tags: ["web scraping", "nextjs", "react", "tailwindcss", "open source"],
+        tags: ["deserializador", "previred", "cotizaciones", "api", "contabilidad"],
         title: "Extractor de datos de cotizaciones Previred.",
         pathImage: "/previred.png",
         body: <Body/>,
         type: "Api",
         friendlyName: "extractor-datos-pdf-cotizaciones"
     },
-    Page: <Page/>
+    Page: <Page/>,
+    Seo: {
+        title: "Extractor de datos de cotizaciones Previred.",
+        description: "Deserializa planillas de previred en un formato json, con datos relevantes como trabajadores, movimientos de trabajadores, sueldos, pagos afp, fonasa, etc." +
+            "los sirve desde una web api en formato json, para que puedan ser consumidos por cualquier aplicación cliente."
+    }
 }
 
 function Body() {

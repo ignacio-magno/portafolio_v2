@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import {getProyectos, IProyectos} from "@/components/proyectosGenerator/IProyector";
 
+export const metadata = {
+    title: "Proyectos Open Source y Apis, desarrollo de software para contabildad, web Scraping, servidores web y despliegue en la nube. | Ignacio LP",
+    description: "Multiples proyectos desarrollados compartidos, promoviendo el open source y los servicios a traves de api, " +
+        "estos proyectos van desde lógica de empresa hasta web scrapping y machine learning, todo con el fin de aprender y compartir.",
+}
 
 export default async function Page() {
 
@@ -62,5 +67,5 @@ function Item({href, tags, title, pathImage, body, type}: IProyectos["Card"]) {
 }
 
 function Tag({item}: { item: string }) {
-    return <div className={"bg-cyan-600 px-3 rounded"}>{item}</div>
+    return <div className={"bg-orange-600 px-3 rounded"}>{item}</div>
 }

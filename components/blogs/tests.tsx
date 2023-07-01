@@ -14,6 +14,10 @@ export const TestBlog: IBlogs = {
     Page: {
         body: <Body/>,
         title: "Test Blog"
+    },
+    Seo: {
+        title: "Test Blog",
+        description: "Test Blog"
     }
 }
 

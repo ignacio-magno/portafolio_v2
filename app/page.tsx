@@ -6,6 +6,12 @@ import styles from './styles.module.css'
 import Link from "next/link";
 import {SVGProps} from "react";
 
+export const metadata = {
+    title: "Ignacio L. Paycho, Desarrollador de software profesional | Ignacio lp",
+    description: "Ignacio L. Paycho, Desarrollador de software profesional de software para backend y frontend," +
+        " abiertos a las nuevas tecnologícas como el machine learning y la robótica."
+}
+
 export default function Home() {
     return (
         <main className="">
@@ -20,13 +26,13 @@ export default function Home() {
                     <Link href={"https://github.com/ignacio-magno"} rel={"nofollow"}>
                         <CarbonLogoGithub fontSize={25}/>
                     </Link>
-                    <Link href={"https://www.instagram.com/ignacio_magno/"} rel={"nofollow"}>
+                    <Link href={"https://www.instagram.com/"} rel={"nofollow"}>
                         <CarbonLogoInstagram fontSize={25}/>
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/ignacio-magno/"} rel={"nofollow"}>
+                    <Link href={"https://www.linkedin.com/in/ignacio-l-paycho-767885140/"} rel={"nofollow"}>
                         <CarbonLogoLinkedin fontSize={25}/>
                     </Link>
-                    <Link href={"https://www.youtube.com/channel/UC9QX6Z1Q5Z1Y5qZ4X6Z6Z1g"} rel={"nofollow"}>
+                    <Link href={"https://www.youtube.com/channel/UCbrN_ryT5ubp9InpLdcnDNw"} rel={"nofollow"}>
                         <CarbonLogoYoutube fontSize={25}/>
                     </Link>
                     <Link href={"mailto:lasterriens@gmail.com"} rel={"nofollow"} type={"email"}>

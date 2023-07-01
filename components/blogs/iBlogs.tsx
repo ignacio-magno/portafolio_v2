@@ -10,6 +10,10 @@ export interface IBlogs {
     Page: {
         title: string
         body: JSX.Element | JSX.Element[]
+    },
+    Seo:{
+        title: string
+        description: string
     }
 }
 

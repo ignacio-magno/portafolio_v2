@@ -3,7 +3,7 @@ import {IProyectos} from "@/components/proyectosGenerator/IProyector";
 export const LupaPoliticaProyecto: IProyectos = {
     Card: {
         href: "https://lupapolitica.cl",
-        tags: ["web scraping", "nextjs", "react", "tailwindcss", "seo", "open source"],
+        tags: ["politica", "web scraping", "gastos fiscales", "web", "open source"],
         title: "Lupa Política",
         pathImage: "/lupapolitica-black.png",
         body: <Body/>,

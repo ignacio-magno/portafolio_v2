@@ -11,7 +11,11 @@ export interface IProyectos {
         type?: string
         friendlyName?: string
     },
-    Page?: JSX.Element | JSX.Element[]
+    Page?: JSX.Element | JSX.Element[],
+    Seo?: {
+        title: string
+        description: string
+    }
 }
 
 export const getProyectos = async (): Promise<IProyectos[]> => {
