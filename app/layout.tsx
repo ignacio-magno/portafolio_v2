@@ -1,9 +1,5 @@
 import './globals.css'
 import {Inter} from 'next/font/google'
-import NavBar from "@/components/NavBar";
-import styles from "@/app/styles.module.css";
-import Image from "next/image";
-import Pericles from "@/public/pericles.jpg";
 import Link from "next/link";
 
 const inter = Inter({subsets: ['latin']})
@@ -27,7 +23,7 @@ export default function RootLayout({
         </div>
 
         <div
-            className={"font-popins max-w-[90rem] mx-auto px-9 md:px-9 w-full lg:px-20 flex flex-col h-screen text-white"}>
+            className={"font-roboto-mono font-light max-w-[90rem] mx-auto px-9 md:px-9 w-full lg:px-20 flex flex-col h-screen text-white text-base"}>
             <div className={"flex-1 w-[50rem] m-auto "}>
                 <div className={"relative mt-16"}>
                     <div className={"w-full flex justify-between items-center pb-16"}>
