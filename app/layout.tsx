@@ -31,7 +31,7 @@ export default function RootLayout({
                         <div className={"flex gap-x-5 "}>
                             <Link href={"/"}>Sobre mi</Link>
                             <Link href={"/blog"}>Blog</Link>
-                            <Link href={""}>Proyectos</Link>
+                            <Link href={"/proyectos"}>Proyectos</Link>
                             <Link href={""}>Música</Link>
                         </div>
                     </div>
