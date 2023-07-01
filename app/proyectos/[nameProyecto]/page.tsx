@@ -10,7 +10,7 @@ export async function generateMetadata({params}: { params: { nameProyecto: strin
 
 export async function generateStaticParams() {
     const blogs = await getProyectos()
-    return blogs.map(item => ({params: {nameProyecto: item.Card.friendlyName}}))
+    return blogs.map(item => ({nameProyecto: item.Card.friendlyName}))
 }
 
 export default async function Page({params: {nameProyecto}}: { params: { nameProyecto: string } }) {

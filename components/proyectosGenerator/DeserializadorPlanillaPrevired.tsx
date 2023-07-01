@@ -2,13 +2,13 @@ import {IProyectos} from "@/components/proyectosGenerator/IProyector";
 
 export const deserializadorPlanillaPrevired: IProyectos = {
     Card: {
-        href: "/proyectos/extractor-datos-pdf-cotizaciones",
+        href: "/proyectos/extractor-datos-planilla-cotizaciones",
         tags: ["deserializador", "previred", "cotizaciones", "api", "contabilidad"],
         title: "Extractor de datos de cotizaciones Previred.",
         pathImage: "/previred.png",
         body: <Body/>,
         type: "Api",
-        friendlyName: "extractor-datos-pdf-cotizaciones"
+        friendlyName: "extractor-datos-planilla-cotizaciones"
     },
     Page: <Page/>,
     Seo: {

@@ -11,7 +11,7 @@ export async function generateMetadata({params}: { params: { title: string } }) 
 
 export async function generateStaticParams() {
     const blogs = await getBlogs()
-    return blogs.map(item => ({params: {title: item.Card.friendlyName}}))
+    return blogs.map(item => ({title: item.Card.friendlyName}))
 }
 
 export default async function Page({params: {title}}: { params: { title: string } }) {
