@@ -6,6 +6,7 @@ import {CarbonLogoGithub} from "@/components/logos";
 import {Metadata} from "next";
 import Shared from "@/components/Shared";
 
+// todo:linkedin not working
 export const metadata: Metadata = {
     title: "Api Previred, comunicate con Previred de forma rápida y automatizada | Ignacio LP.",
     description: "La conexión a previred ya no será engorrosa, ahora solo un click y automáticamente podrás " +
