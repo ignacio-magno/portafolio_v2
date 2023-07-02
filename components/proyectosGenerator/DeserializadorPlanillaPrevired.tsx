@@ -1,4 +1,5 @@
 import {IProyectos} from "@/components/proyectosGenerator/IProyector";
+import Image from "next/image";
 
 export const deserializadorPlanillaPrevired: IProyectos = {
     Card: {
@@ -14,7 +15,8 @@ export const deserializadorPlanillaPrevired: IProyectos = {
     Seo: {
         title: "Extractor de datos de cotizaciones Previred.",
         description: "Deserializa planillas de previred en un formato json, con datos relevantes como trabajadores, movimientos de trabajadores, sueldos, pagos afp, fonasa, etc." +
-            "los sirve desde una web api en formato json, para que puedan ser consumidos por cualquier aplicación cliente."
+            "los sirve desde una web api en formato json, para que puedan ser consumidos por cualquier aplicación cliente.",
+        author: "Ignacio L. Paycho",
     }
 }
 
@@ -25,7 +27,10 @@ function Body() {
 
 function Page() {
     return <>
-        <h1 className={"text-xl font-medium"}>Extractor de datos de cotizaciones Previred.</h1>
+        <div className={"flex gap-x-4 ml-3 items-center"}>
+            <Image src={"/previred.png"} alt={"previred logo"} width={50} height={50}/>
+            <h1 className={"text-xl font-medium"}>Extractor de datos de cotizaciones Previred.</h1>
+        </div>
         <br/>
         <br/>
         <div className={"flex flex-col gap-y-4"}>

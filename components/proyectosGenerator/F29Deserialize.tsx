@@ -18,6 +18,7 @@ export const F29Deserialize: IProyectos = {
     Seo: {
         title: "Extractor de datos de F29. | Ignacio LP",
         description: "Deserializa y extrae datos de los F29 pagados, extrayendo datos como los creditos y debitos, el folio del f29 y periodo tributario.",
+        author: "Ignacio L. Paycho",
     }
 }
 

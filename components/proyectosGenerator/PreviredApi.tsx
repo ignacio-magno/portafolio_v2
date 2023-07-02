@@ -18,6 +18,7 @@ export const PreviredApi: IProyectos = {
         title: "Api Previred | Ignacio LP.",
         description: "Conecta a previred por medio de un software para poder descargar multiples cotizaciones de forma rapida y sencilla, " +
             "listar las cotizaciones pagadas, y otras implementaciones a futuro.",
+        author: "Ignacio L. Paycho",
     },
     Page: <Page/>
 

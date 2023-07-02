@@ -17,7 +17,8 @@ export interface IProyectos {
     Page?: JSX.Element | JSX.Element[],
     Seo?: {
         title: string
-        description: string
+        description: string,
+        [key: string]: string
     }
 }
 

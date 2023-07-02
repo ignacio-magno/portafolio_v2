@@ -19,6 +19,7 @@ export const SiiApi: IProyectos = {
         title: "Api Servicios Impuestos Internos SII | Ignacio LP.",
         description: "Puedes obtener en segundos documentos que entrega el servicio de impuestos internos" +
             " de Chile, consultar tus ivas, tus f29, crear libro de compra y ventas a traves de este software open source.",
+        author: "Ignacio L. Paycho",
     }
 }
 
