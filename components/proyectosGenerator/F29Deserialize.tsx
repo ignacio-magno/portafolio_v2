@@ -29,7 +29,7 @@ function Body() {
 function Page() {
     return <>
         <div className={"flex gap-x-4 ml-3 items-center"}>
-            <Image src={"/f29.png"} alt={"f29 logo"} width={50} height={50}/>
+            <Image src={"/f29.png"} alt={"image"} width={50} height={50}/>
             <h1 className={"text-xl font-medium"}>Extractor de datos de F29.</h1>
         </div>
         <br/>

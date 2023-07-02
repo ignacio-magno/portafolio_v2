@@ -36,7 +36,7 @@ function Page() {
     return <>
         <div>
             <div className={"flex gap-x-4 ml-3 items-center"}>
-                <Image src={"/sii.png"} alt={"sii logao"} width={50} height={50}/>
+                <Image src={"/sii.png"} alt={"image"} width={50} height={50}/>
                 <h1 className={"text-xl font-medium"}>Api Servicios impuestos internos</h1>
             </div>
             <br/>

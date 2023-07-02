@@ -2,10 +2,7 @@ import {getProyectos} from "@/components/proyectosGenerator/IProyector";
 
 export async function generateMetadata({params}: { params: { nameProyecto: string } }) {
     const blog = await getProyectos().then(j => j.find(k => k.Card.friendlyName === params.nameProyecto))
-    return {
-        title: blog?.Seo?.title,
-        description: blog?.Seo?.description,
-    }
+    return blog?.Seo || {}
 }
 
 export async function generateStaticParams() {
