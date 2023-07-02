@@ -3,6 +3,7 @@ import {deserializadorPlanillaPrevired} from "@/components/proyectosGenerator/De
 import {SiiApi} from "@/components/proyectosGenerator/SiiApi";
 import {PreviredApi} from "@/components/proyectosGenerator/PreviredApi";
 import {F29Deserialize} from "@/components/proyectosGenerator/F29Deserialize";
+import {Metadata} from "next";
 
 export interface IProyectos {
     Card: {
@@ -15,11 +16,7 @@ export interface IProyectos {
         friendlyName?: string
     },
     Page?: JSX.Element | JSX.Element[],
-    Seo?: {
-        title: string
-        description: string,
-        [key: string]: string
-    }
+    Seo?: Metadata
 }
 
 export const getProyectos = async (): Promise<IProyectos[]> => {
