@@ -57,7 +57,7 @@ function Item({href, tags, title, pathImage, body, type}: IProyectos["Card"]) {
                 {body}
             </div>
             <br/>
-            <div className={"flex gap-x-2 text-white"}>
+            <div className={"flex flex-wrap gap-x-2 text-white gap-y-2"}>
                 {
                     tags.map(tag => <Tag item={tag} key={tag}/>)
                 }
