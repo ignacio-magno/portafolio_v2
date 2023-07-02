@@ -19,6 +19,7 @@ export const PreviredApi: IProyectos = {
         description: "Conecta a previred por medio de un software para poder descargar multiples cotizaciones de forma rapida y sencilla, " +
             "listar las cotizaciones pagadas, y otras implementaciones a futuro.",
         author: "Ignacio L. Paycho",
+        image: "previred-api-shared.png"
     },
     Page: <Page/>
 
@@ -27,7 +28,7 @@ export const PreviredApi: IProyectos = {
 function Page() {
     return <>
         <div className={"flex gap-x-4 ml-3 items-center"}>
-            <Image src={"/previred.png"} alt={"image"} width={50} height={50}/>
+            <Image src={"/previred-api-shared.png"} alt={"logo previred"} width={50} height={50}/>
             <h1 className={"text-xl font-medium"}>Previred Api</h1>
         </div>
         <br/>
