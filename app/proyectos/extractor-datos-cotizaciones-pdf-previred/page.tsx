@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-    const urlPage = headers().get("host") + "/proyectos/extractor-datos-cotizaciones-pdf-previred";
+    const urlPage = process.env.HOST + "/proyectos/extractor-datos-cotizaciones-pdf-previred";
 
     return <>
         <Image src={"/cotizaciones-to-json-linkedin.png"} alt={"image"} width={1080} height={1350} hidden/>

@@ -1,4 +1,3 @@
-import {headers} from 'next/headers'
 import Image from "next/image";
 import ImportantWord from "@/components/importantWord";
 import Link from "next/link";
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-    const urlPage = headers().get("host") + "/proyectos/api-previred";
+    const urlPage = process.env.HOST + "/proyectos/api-previred";
     return <>
         <Image src={"/linkedin-card-previred.png"} alt={"image"} hidden width={1080} height={1350}/>
 

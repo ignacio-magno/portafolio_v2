@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-    const urlPage = headers().get("host") + "/proyectos/api-servicios-impuestos-internos-sii";
+    const urlPage = process.env.HOST + "/proyectos/api-servicios-impuestos-internos-sii";
     return <>
         <div>
             <Image src={"/sii-api.png"} alt={"image"} width={1350} height={1080} hidden/>
