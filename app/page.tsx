@@ -28,21 +28,23 @@ export default function Home() {
                     </div>
                     <h1 className="text-4xl font-bold ">Ignacio L. Paycho</h1>
                 </div>
-                <div className={"flex gap-x-4"}>
-                    <Link href={"https://github.com/ignacio-magno"} rel={"nofollow"}>
-                        <CarbonLogoGithub fontSize={25}/>
+                <div className={"flex gap-x-4 w-full md:w-max"}>
+                    <Link href={"https://github.com/ignacio-magno"} rel={"nofollow"} className={"m-auto"}>
+                        <CarbonLogoGithub className={"text-[50px] md:text-[26px]"}/>
                     </Link>
-                    <Link href={"https://www.instagram.com/"} rel={"nofollow"}>
-                        <CarbonLogoInstagram fontSize={25}/>
+                    <Link href={"https://www.instagram.com/"} rel={"nofollow"} className={"m-auto"}>
+                        <CarbonLogoInstagram  className={"text-[50px] md:text-[26px]"}/>
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/ignacio-l-paycho-767885140/"} rel={"nofollow"}>
-                        <CarbonLogoLinkedin fontSize={25}/>
+                    <Link href={"https://www.linkedin.com/in/ignacio-l-paycho-767885140/"} rel={"nofollow"}
+                          className={"m-auto"}>
+                        <CarbonLogoLinkedin  className={"text-[50px] md:text-[26px]"}/>
                     </Link>
-                    <Link href={"https://www.youtube.com/channel/UCbrN_ryT5ubp9InpLdcnDNw"} rel={"nofollow"}>
-                        <CarbonLogoYoutube fontSize={25}/>
+                    <Link href={"https://www.youtube.com/channel/UCbrN_ryT5ubp9InpLdcnDNw"} rel={"nofollow"}
+                          className={"m-auto"}>
+                        <CarbonLogoYoutube className={"text-[50px] md:text-[26px]"}/>
                     </Link>
-                    <Link href={"mailto:lasterriens@gmail.com"} rel={"nofollow"} type={"email"}>
-                        <CarbonEmail fontSize={25}/>
+                    <Link href={"mailto:lasterriens@gmail.com"} rel={"nofollow"} type={"email"} className={"m-auto"}>
+                        <CarbonEmail className={"text-[50px] md:text-[26px]"}/>
                     </Link>
                 </div>
 
