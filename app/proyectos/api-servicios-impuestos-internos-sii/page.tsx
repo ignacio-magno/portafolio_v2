@@ -29,9 +29,11 @@ export default function Page() {
     return <>
         <div>
             <Image src={"/sii-api.png"} alt={"image"} width={1350} height={1080} hidden/>
-            <div className={"flex gap-x-4 ml-3 items-center"}>
-                <Image src={"/sii.png"} alt={"image"} width={50} height={50}/>
-                <h1 className={"text-xl font-medium"}>Api Servicios impuestos internos</h1>
+            <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
+                <div className={"relative h-32 w-32 md:h-20 md:w-20 mb-5 md:mb-0"}>
+                    <Image src={"/sii.png"} alt={"image"} fill/>
+                </div>
+                <h1 className={"text-2xl text-center md:text-xl font-medium"}>Api Servicios impuestos internos</h1>
             </div>
             <br/>
             <Shared href={urlPage}/>
@@ -74,7 +76,7 @@ export default function Page() {
             <Link href={"https://github.com/ignacio-magno/sii-api-cl"} className={""} target={"_blank"}
                   rel={"nofollow"}>
                 <div
-                    className={"px-5 py-2 bg-green-700 text-white rounded-lg flex gap-x-5 justify-center pt-4 text-md mt-5"}>
+                    className={"px-5 py-2 bg-green-700 text-white rounded-lg flex gap-x-5 justify-center pt-4 text-md mt-8 md:mt-5"}>
                     <CarbonLogoGithub fontSize={25}/> Ir Al código
                 </div>
             </Link>

@@ -18,13 +18,13 @@ export default function RootLayout({
         </div>
 
         <div
-            className={"font-roboto-mono font-light max-w-[90rem] mx-auto px-9 md:px-9 w-full lg:px-20 flex flex-col h-screen text-white text-base"}>
-            <div className={"flex-1 w-[50rem] m-auto "}>
+            className={"font-roboto-mono font-light max-w-[90rem] mx-auto px-4 md:px-9 w-full lg:px-20 flex flex-col h-screen text-white text-base"}>
+            <div className={"flex-1 md:w-[50rem] m-auto text-xl md:text-base"}>
                 <div className={"relative mt-16 mb-16"}>
                     <div className={"w-full flex justify-between items-center pb-16"}>
                         <div></div>
                         <div className={"flex gap-x-5 "}>
-                            <Link href={"/"}>Sobre mi</Link>
+                            <Link href={"/"} rel={"canonical"}>Sobre mi</Link>
                             <Link href={"/blog"}>Blog</Link>
                             <Link href={"/proyectos"}>Proyectos</Link>
                             {/*

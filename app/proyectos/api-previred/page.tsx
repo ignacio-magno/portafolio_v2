@@ -24,10 +24,13 @@ export default function Page() {
     return <>
         <Image src={"/linkedin-card-previred.png"} alt={"image"} hidden width={1080} height={1350}/>
 
-        <div className={"flex gap-x-4 ml-3 items-center"}>
-            <Image src={"/previred-api-shared-png.png"} alt={"logo previred"} width={300} height={100}/>
-            <h1 className={"text-xl font-medium"}>Previred Api</h1>
+        <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
+            <div className={"relative h-20 w-80 md:h-16 md:w-52 mb-5 md:mb-0"}>
+                <Image src={"/previred-api-shared-png.png"} alt={"logo previred"} fill/>
+            </div>
+            <h1 className={"text-2xl text-center md:text-xl font-medium"}>Previred Api</h1>
         </div>
+        <br/>
 
         <Shared href={urlPage}/>
 
@@ -45,7 +48,7 @@ export default function Page() {
 
         <Link href={"https://github.com/ignacio-magno/api-previred"} className={""} target={"_blank"} rel={"nofollow"}>
             <div
-                className={"px-5 py-2 bg-green-700 text-white rounded-lg flex gap-x-5 justify-center pt-4 text-md mt-5"}>
+                className={"px-5 py-2 bg-green-700 text-white rounded-lg flex gap-x-5 justify-center pt-4 text-md mt-8 md:mt-5"}>
                 <CarbonLogoGithub fontSize={25}/> Ir Al código
             </div>
         </Link>

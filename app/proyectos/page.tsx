@@ -13,7 +13,7 @@ export default async function Page() {
     const def = await getProyectos()
 
     return <>
-        <h1 className={"text-xl font-medium"}>Proyectos Open Source y Apis.</h1>
+        <h1 className={"text-2xl font-medium"}>Proyectos Open Source y Apis.</h1>
         <br/>
         <br/>
         <div className={"flex flex-col gap-y-4"}>
@@ -44,12 +44,16 @@ export default async function Page() {
 
 function Item({href, tags, title, pathImage, body, type}: IProyectos["Card"]) {
     return <Link href={href} rel={"nofollow"}>
-        <div className={"bg-white px-14 py-7 text-black"}>
-            <div className={"flex justify-between items-center"}>
-                <div className={"flex gap-x-2 items-center"}>
-                    <Image src={pathImage} alt={"lupa politica logo"} width={50} height={50}/>
-                    <h2 className={"text-xl font-medium"}>{title}</h2>
+        <div className={"bg-white px-5 md:px-14 py-7 text-black"}>
+            <div className={"flex flex-col md:flex-row justify-between items-center"}>
+                <div className={"flex flex-col md:flex-row gap-x-2 items-center"}>
+                    <div className={"relative h-28 w-28 mb-4 md:h-14 md:w-14 md:mb-0"}>
+                        <Image src={pathImage} alt={"lupa politica logo"} fill/>
+                    </div>
+
+                    <h2 className={"text-2xl font-medium"}>{title}</h2>
                 </div>
+
                 <p className={"text-xs"}>{type}</p>
             </div>
             <br/>

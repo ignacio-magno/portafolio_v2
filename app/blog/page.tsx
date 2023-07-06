@@ -9,7 +9,7 @@ export const metadata = {
 export default async function Page() {
     const elements = await getBlogs()
     return <main>
-        <h1 className={"text-xl font-medium "}>Mi blog personal.</h1>
+        <h1 className={"md:text-2xl font-medium "}>Mi blog personal.</h1>
         <br/>
         <p>Pensamientos, ideas, tutoriales, curiosidades, todo lo escribiré aquí y que crea que pueda ayudar un poco
             a los demás, a veces escribiré solo por la gracia de poder documentar lo que se me ocurre en el momento.</p>
@@ -27,7 +27,7 @@ function Item({friendlyName, tags, title, body}: IBlogs["Card"]) {
             <p className={"mb-5"}>
                 {body}
             </p>
-            <div className={"flex gap-x-3 mt-3"}>
+            <div className={"flex flex-wrap gap-x-3 mt-3 gap-y-2"}>
                 {tags.map(tag => <Tag item={tag} key={tag}/>)}
             </div>
         </div>
