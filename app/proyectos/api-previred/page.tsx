@@ -27,8 +27,6 @@ export const metadata: Metadata = {
 export default function Page() {
     const urlPage = process.env.HOST + "/proyectos/api-previred";
     return <>
-        <Image src={"/linkedin-card-previred.png"} alt={"image"} hidden width={1080} height={1350}/>
-
         <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
             <div className={"relative h-20 w-80 md:h-16 md:w-52 mb-5 md:mb-0"}>
                 <Image src={"/previred-api-shared-png.png"} alt={"logo previred"} fill/>

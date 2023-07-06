@@ -24,7 +24,6 @@ export default function Page() {
     const urlPage = process.env.HOST + "/proyectos/extractor-datos-cotizaciones-pdf-previred";
 
     return <>
-        <Image src={"/cotizaciones-to-json-linkedin.png"} alt={"image"} width={1080} height={1350} hidden/>
         <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
             <div className={"relative h-32 w-32 md:h-20 md:w-20 mb-5 md:mb-0"}>
                 <Image src={"/previred.png"} alt={"logo previred"} fill/>

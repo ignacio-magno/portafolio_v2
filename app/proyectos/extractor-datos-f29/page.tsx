@@ -27,7 +27,6 @@ export const metadata: Metadata = {
 export default function Page() {
     const urlPage = process.env.HOST + "/proyectos/extractor-datos-f29";
     return <>
-        <Image src={"/f29-linkedin.png"} alt={"f29 logo"} width={200} height={200} hidden/>
         <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
             <div className={"relative h-32 w-32 md:h-20 md:w-20 mb-5 md:mb-0"}>
                 <Image src={"/f29.png"} alt={"f29 logo"} fill/>
