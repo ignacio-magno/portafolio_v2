@@ -17,10 +17,13 @@ export const metadata: Metadata = {
     title: title,
     description: description,
 
+    openGraph: {
+        title: title,
+        description: description
+    },
     twitter: {
         title: title,
-        description: description,
-        images: "/sii-api.png"
+        description: description
     }
 }
 
