@@ -8,15 +8,6 @@ export const metadata: Metadata = {
     title: "Extractor de datos de cotizaciones Previred. Deserialize cotizaciones fácil y en cuestión de segundos. | IgnacioLP",
     description: "Deserializa las planillas de previred automáticamente para obtener datos de los trabajadores, movimientos, sueldos, afp, fonasa, " +
         " días de licencias, etc. Todo fácil y accesible en un endpoint.",
-    twitter: {
-        title: "Extractor de datos de cotizaciones Previred. Deserialize cotizaciones fácil y en cuestión de segundos. | IgnacioLP",
-        description: "Deserializa las planillas de previred automáticamente para obtener datos de los trabajadores, movimientos, sueldos, afp, fonasa, " +
-            " días de licencias, etc. Todo fácil y accesible en un endpoint.",
-        card: "summary_large_image",
-        site: "@ignaciolp",
-        creator: "@ignaciolp",
-        images: "/cotizaciones-to-json.png"
-    }
 }
 
 export default function Page() {
