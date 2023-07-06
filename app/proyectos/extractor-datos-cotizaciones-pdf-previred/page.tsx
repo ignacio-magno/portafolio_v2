@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     openGraph: {
         title: title,
         description: description
+    },
+    twitter:{
+        title: title,
+        description: description
     }
 }
 
