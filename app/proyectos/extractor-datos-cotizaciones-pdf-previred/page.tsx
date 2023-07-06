@@ -4,10 +4,16 @@ import ImportantWord from "@/components/importantWord";
 import {headers} from "next/headers";
 import Shared from "@/components/Shared";
 
+const title = "Extractor de datos de cotizaciones Previred. Deserialize cotizaciones fácil y en cuestión de segundos. | IgnacioLP"
+const description = "Deserializa las planillas de previred automáticamente para obtener datos de los trabajadores, movimientos, sueldos, afp, fonasa, " +
+    " días de licencias, etc. Todo fácil y accesible en un endpoint."
 export const metadata: Metadata = {
-    title: "Extractor de datos de cotizaciones Previred. Deserialize cotizaciones fácil y en cuestión de segundos. | IgnacioLP",
-    description: "Deserializa las planillas de previred automáticamente para obtener datos de los trabajadores, movimientos, sueldos, afp, fonasa, " +
-        " días de licencias, etc. Todo fácil y accesible en un endpoint.",
+    title: title,
+    description: description,
+    openGraph: {
+        title: title,
+        description: description
+    }
 }
 
 export default function Page() {
@@ -19,7 +25,8 @@ export default function Page() {
             <div className={"relative h-32 w-32 md:h-20 md:w-20 mb-5 md:mb-0"}>
                 <Image src={"/previred.png"} alt={"logo previred"} fill/>
             </div>
-            <h1 className={"text-2xl text-center md:text-xl font-medium"}>Extractor de datos de cotizaciones Previred.</h1>
+            <h1 className={"text-2xl text-center md:text-xl font-medium"}>Extractor de datos de cotizaciones
+                Previred.</h1>
         </div>
         <br/>
         <Shared href={urlPage}/>
