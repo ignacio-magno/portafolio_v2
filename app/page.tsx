@@ -32,10 +32,10 @@ export default function Home() {
                     <Link href={"https://github.com/ignacio-magno"} rel={"nofollow"} className={"m-auto"}>
                         <CarbonLogoGithub className={"text-[50px] md:text-[26px]"}/>
                     </Link>
-                    <Link href={"https://www.instagram.com/"} rel={"nofollow"} className={"m-auto"}>
+                    <Link href={"https://www.instagram.com/nacho_magnus"} rel={"nofollow"} className={"m-auto"}>
                         <CarbonLogoInstagram  className={"text-[50px] md:text-[26px]"}/>
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/ignacio-l-paycho-767885140/"} rel={"nofollow"}
+                    <Link href={"https://www.linkedin.com/in/ignacio-l-paycho-767885140"} rel={"nofollow"}
                           className={"m-auto"}>
                         <CarbonLogoLinkedin  className={"text-[50px] md:text-[26px]"}/>
                     </Link>
