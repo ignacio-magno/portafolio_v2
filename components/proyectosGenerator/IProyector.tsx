@@ -4,6 +4,7 @@ import {SiiApi} from "@/components/proyectosGenerator/SiiApi";
 import {PreviredApi} from "@/components/proyectosGenerator/PreviredApi";
 import {F29Deserialize} from "@/components/proyectosGenerator/F29Deserialize";
 import {Metadata} from "next";
+import {brashProyecto} from "@/components/proyectosGenerator/brashProyecto";
 
 export interface IProyectos {
     Card: {
@@ -20,5 +21,5 @@ export interface IProyectos {
 }
 
 export const getProyectos = async (): Promise<IProyectos[]> => {
-    return [LupaPoliticaProyecto, deserializadorPlanillaPrevired, SiiApi, PreviredApi, F29Deserialize];
+    return [brashProyecto, LupaPoliticaProyecto, deserializadorPlanillaPrevired, SiiApi, PreviredApi, F29Deserialize];
 }

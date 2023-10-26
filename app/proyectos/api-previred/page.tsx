@@ -35,22 +35,19 @@ export default function Page() {
         <Shared href={urlPage}/>
 
         <br/>
-        <p>Siempre es engorroso acceder a la web de previred y descargar planillas o asegurarse que estén pagadas,
+        <p>
+            Siempre es engorroso acceder a la web de previred y descargar planillas o asegurarse que estén pagadas,
             dicho esto levante este software que automatiza esta tarea,<ImportantWord>descarga las
-                planillas</ImportantWord> pagadas
+            planillas</ImportantWord> pagadas
             de una empresa, si antes tomaba <ImportantWord>20 minutos</ImportantWord> en descargarlas ahora solo
             será en <ImportantWord>5 segundos.</ImportantWord> aproximado.
         </p>
-        <br/>
-        <p>Proyecto open source escrito en <ImportantWord>Go</ImportantWord>. Funciona a traves de peticiones https
-            luego de iniciar sesión
-            el cliente, con guardado de tokens de sesión.</p>
 
-        <Link href={"https://github.com/ignacio-magno/api-previred"} className={""} target={"_blank"} rel={"nofollow"}>
-            <div
-                className={"px-5 py-2 bg-green-700 text-white rounded-lg flex gap-x-5 justify-center pt-4 text-md mt-8 md:mt-5"}>
-                <CarbonLogoGithub fontSize={25}/> Ir Al código
-            </div>
-        </Link>
+        <br/>
+        <p>
+            He implementado esta api para mi otro proyecto <i>Brash</i>, donde ya existen soluciones para estas tareas
+            con un solo click, revisa mi proyecto Brash donde tengo estas herramientas y más gratis.
+        </p>
+
     </>
 }
