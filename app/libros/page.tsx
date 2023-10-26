@@ -87,7 +87,7 @@ export default function Page() {
 }
 
 function Item(props: { title: string, body: any, image: any }) {
-    return <div className={"grid grid-cols-2 gap-x-5"}>
+    return <div className={"grid md:grid-cols-2 gap-x-5 gap-y-4"}>
         <div>
             <h2 className={"font-bold"}>{props.title}</h2>
             <br/>
