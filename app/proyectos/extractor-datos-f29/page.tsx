@@ -6,27 +6,27 @@ import {Metadata} from "next";
 import {headers} from "next/headers";
 import Shared from "@/components/Shared";
 
-export const metadata: Metadata = {
-    title: "Extractor de datos de F29. Obten en segundos  datos relevantes como " +
-        " Ppm, credito, débito, impuesto determinado, etc. | Ignacio LP",
-    description: "Deserializa y extrae datos de los F29 pagados fácil y rápido, extrayendo datos importantes para tu negocio  como son los " +
-        "valos de creditos y debitos, el folio del f29 y periodo tributario, etc",
+const title = "Extractor de datos de F29. Obten en segundos  datos relevantes como " +
+    " Ppm, credito, débito, impuesto determinado, etc. | Ignacio LP"
+const description = "Deserializa y extrae datos de los F29 pagados fácil y rápido, extrayendo datos importantes para tu negocio  como son los " +
+    "valos de creditos y debitos, el folio del f29 y periodo tributario, etc"
 
+export const metadata: Metadata = {
+    title: title,
+    description: description,
+    openGraph: {
+        title: title,
+        description: description
+    },
     twitter: {
-        card: "summary_large_image",
-        site: "@ignaciolp_",
-        title: "Extractor de datos de F29. Obten en segundos  datos relevantes como " +
-            " Ppm, credito, débito, impuesto determinado, etc. | Ignacio LP",
-        description: "Deserializa y extrae datos de los F29 pagados fácil y rápido, extrayendo datos importantes para tu negocio  como son los " +
-            "valos de creditos y debitos, el folio del f29 y periodo tributario, etc",
-        images: "/f29.png"
+        title: title,
+        description: description
     }
 }
 
 export default function Page() {
     const urlPage = process.env.HOST + "/proyectos/extractor-datos-f29";
     return <>
-        <Image src={"/f29-linkedin.png"} alt={"f29 logo"} width={200} height={200} hidden/>
         <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
             <div className={"relative h-32 w-32 md:h-20 md:w-20 mb-5 md:mb-0"}>
                 <Image src={"/f29.png"} alt={"f29 logo"} fill/>
