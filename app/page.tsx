@@ -52,7 +52,7 @@ export default function Home() {
                     </Link>
                 </div>
 
-                <p>Hola, me llamo ignacio y soy un desarrollador de software de Iquique, Chile. &#127796;</p>
+                <p>Hola, me llamo ignacio Larama y soy un desarrollador de software de Iquique, Chile. &#127796;</p>
                 <p>Me centro en el desarrollo backend y lógica de programación con buenas prácticas de código,
                     sigo las buenas prácticas del testing para un desarrollo optimo y escalable. </p>
 
