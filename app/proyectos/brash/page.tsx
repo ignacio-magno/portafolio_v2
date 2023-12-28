@@ -41,7 +41,9 @@ export default function Page() {
                 nuevas funcionalidad, sin sufrir en el intento.
             </p>
 
-            <a className={"text-cyan-300 underline"} href={"https://www.brash.cl"}>Brash.cl</a>
+            <br/>
+
+            <a className={"py-5 w-full text-center text-white bg-cyan-700 hover:bg-cyan-900 rounded font-bold"} href={"https://www.brash.cl"}>Brash.cl</a>
 
         </div>
 
