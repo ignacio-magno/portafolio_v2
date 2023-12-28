@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
     const urlPage = process.env.HOST + "/proyectos/api-previred";
-    return <>
+    return <main className={"flex flex-col"}>
         <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
             <div className={"relative h-20 w-80 md:h-16 md:w-52 mb-5 md:mb-0"}>
                 <Image src={"/previred-api-shared-png.png"} alt={"logo previred"} fill/>
@@ -52,5 +52,10 @@ export default function Page() {
             con un solo click, revisa mi proyecto Brash donde tengo estas herramientas y más gratis.
         </p>
 
-    </>
+        <br/>
+
+        <a className={"py-5 w-full text-center text-white bg-cyan-700 hover:bg-cyan-900 rounded font-bold"}
+           href={"https://www.brash.cl"}>Brash.cl</a>
+
+    </main>
 }

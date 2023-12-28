@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
     const urlPage = process.env.HOST + "/proyectos/extractor-datos-f29";
-    return <>
+    return <div className={"flex flex-col"}>
         <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
             <div className={"relative h-32 w-32 md:h-20 md:w-20 mb-5 md:mb-0"}>
                 <Image src={"/f29.png"} alt={"f29 logo"} fill/>
@@ -49,12 +49,14 @@ export default function Page() {
             <ImportantWord>¿Y si le enseñamos a una ia a leer F29?</ImportantWord>
         </div>
 
-        <Link href={"https://github.com/ignacio-magno/f29-deserialize"} className={""} target={"_blank"}
-              rel={"nofollow"}>
-            <div
-                className={"px-5 py-2 bg-green-700 text-white rounded-lg flex gap-x-5 justify-center pt-4 text-md mt-8 md:mt-5"}>
-                <CarbonLogoGithub fontSize={25}/> Ir Al código
-            </div>
-        </Link>
-    </>
+        <p>
+            He implementado esta api para mi otro proyecto <i>Brash</i>, donde ya existen soluciones para estas tareas
+            con un solo click, revisa mi proyecto Brash donde tengo estas herramientas y más gratis.
+        </p>
+
+        <br/>
+
+        <a className={"py-5 w-full text-center text-white bg-cyan-700 hover:bg-cyan-900 rounded font-bold"}
+           href={"https://www.brash.cl"}>Brash.cl</a>
+    </div>
 }

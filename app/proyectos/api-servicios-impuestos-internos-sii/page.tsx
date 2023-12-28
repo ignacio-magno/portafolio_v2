@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 export default function Page() {
     const urlPage = process.env.HOST + "/proyectos/api-servicios-impuestos-internos-sii";
     return <>
-        <div>
+        <div className={"flex flex-col"}>
             <div className={"flex flex-col md:flex-row gap-x-4 ml-3 items-center"}>
                 <div className={"relative h-32 w-32 md:h-20 md:w-20 mb-5 md:mb-0"}>
                     <Image src={"/sii.png"} alt={"image"} fill/>
@@ -46,6 +46,12 @@ export default function Page() {
                 He implementado un proyecto donde esta api es un agregado, puedes revisar entre mi proyectos el
                 proyecto <i>Brash</i> y acceder a herramientas que aprovechan esta cualidad gratis y ya implementadas.
             </p>
+
+            <br/>
+
+            <a className={"py-5 w-full text-center text-white bg-cyan-700 hover:bg-cyan-900 rounded font-bold"}
+               href={"https://www.brash.cl"}>Brash.cl</a>
         </div>
+
     </>
 }
