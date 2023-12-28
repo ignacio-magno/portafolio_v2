@@ -2,6 +2,7 @@ import './globals.css'
 import {Inter} from 'next/font/google'
 import Link from "next/link";
 import {Metadata} from "next";
+import GoogleAnalytics from "@/components/googleAnalytics";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -15,8 +16,15 @@ export default function RootLayout({
                                    }: {
     children: React.ReactNode
 }) {
+    console.log("her")
+    console.log(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS)
     return (
         <html lang="es">
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+            <GoogleAnalytics ga_id=
+                                 {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}/>
+        ) : null}
+
         <div className="fixed inset-0 flex justify-center sm:px-3 bg-zinc-900">
             <div className="flex w-full md:max-w-[70rem]  lg:px-8">
                 <div className="w-full ring-1 ring-zinc-100 bg-zinc-800 ring-zinc-300/20"/>

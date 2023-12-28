@@ -33,22 +33,26 @@ export default function Home() {
                         <CarbonLogoGithub className={"text-[50px] md:text-[26px]"}/>
                     </Link>
                     <Link href={"https://www.instagram.com/nacho_magnus"} rel={"nofollow"} className={"m-auto"}>
-                        <CarbonLogoInstagram  className={"text-[50px] md:text-[26px]"}/>
+                        <CarbonLogoInstagram className={"text-[50px] md:text-[26px]"}/>
                     </Link>
                     <Link href={"https://www.linkedin.com/in/ignacio-l-paycho-767885140"} rel={"nofollow"}
                           className={"m-auto"}>
-                        <CarbonLogoLinkedin  className={"text-[50px] md:text-[26px]"}/>
+                        <CarbonLogoLinkedin className={"text-[50px] md:text-[26px]"}/>
                     </Link>
+                    {
+                        /*
                     <Link href={"https://www.youtube.com/channel/UCbrN_ryT5ubp9InpLdcnDNw"} rel={"nofollow"}
                           className={"m-auto"}>
                         <CarbonLogoYoutube className={"text-[50px] md:text-[26px]"}/>
                     </Link>
+                                            */
+                    }
                     <Link href={"mailto:lasterriens@gmail.com"} rel={"nofollow"} type={"email"} className={"m-auto"}>
                         <CarbonEmail className={"text-[50px] md:text-[26px]"}/>
                     </Link>
                 </div>
 
-                <p>Hola, me llamo ignacio y soy un desarrollador de software de Iquique, Chile. &#127796;</p>
+                <p>Hola, me llamo ignacio Larama y soy un desarrollador de software de Iquique, Chile. &#127796;</p>
                 <p>Me centro en el desarrollo backend y lógica de programación con buenas prácticas de código,
                     sigo las buenas prácticas del testing para un desarrollo optimo y escalable. </p>
 
